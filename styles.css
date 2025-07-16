@@ -1,0 +1,75 @@
+body{
+    box-sizing: border-box;
+    background-color: rgb(40, 70, 100);
+    color: white;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+}
+.header{
+    text-align: center;
+    font-size: 30px;
+}
+input{
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    letter-spacing: 2px;
+}
+.container{
+    width: 100%;
+    max-width: 500px;
+    padding: 50px 30px;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+    background-color: rgba(40, 40, 40, 0.7);
+    border-radius: 10px;
+}
+.container:hover{
+    border: 1px solid gray;
+}
+.btn{
+    font-size: 20px;
+    border: none;
+    padding: 20px 15px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(40, 70, 100);
+    color: white;
+}
+.submit-btn{
+    margin-top: 40px;
+}
+.elements{
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 150px 100px 100px;
+    column-gap: 20px;
+}
+.elements .s, .elements .t{
+    width: 100px;
+    height: 20px;
+    font-size: 16px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.container div{
+    /* border: 2px solid green; */
+    text-align: left;
+    /* margin-left: 40px; */
+}
+#letterGrade{
+    font-size: 50px;
+    margin: 0;
+}
+#result{
+    margin: 0;
+    margin-top: 50px;
+}
+
+

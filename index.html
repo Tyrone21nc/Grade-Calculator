@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Grade Calulator</h1>
+    </header>
+    <div class="container">
+        <button class="btn" onclick="addCategory();">Add Category</button>
+        <div class="elements-container">
+            <p class="elements">
+                <label>Exams</label>
+                    <input type="text" class="s" placeholder="percent" required>
+                    <input type="text" class="t" placeholder="average score" required>
+            </p>
+            <p class="elements">
+                <label for="">Homeworks</label>
+                    <input type="textbox" class="s" placeholder="percent" required>
+                    <input type="textbox" class="t" placeholder="average score" required>
+            </p>
+        </div>
+        <!-- Moving  <div class="new-category-info"></div> from the div with the class, "elements-container" allowed the add category to work more than once, as expected-->
+        <div class="new-category-info"></div>
+        <div>
+            <button class="btn submit-btn" onclick="getGrade();">Get Grade</button>
+        </div>
+        
+        <h1 id="result"></h1>
+        <h1 id="letterGrade"></h1>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
