@@ -29,16 +29,20 @@ button{
 .container:hover{
     border: 1px solid gray;
 }
-.btn{
+.btn, .cat-btn{
     font-size: 20px;
     border: none;
     padding: 20px 15px;
     border-radius: 5%;
     cursor: pointer;
 }
-.btn:hover{
+.btn:hover, .cat-btn{
     background-color: rgb(40, 70, 100);
     color: white;
+}
+.cat-btn{
+    font-size: 14px;
+    padding: 10px 8px;
 }
 .submit-btn{
     margin-top: 40px;
@@ -71,5 +75,6 @@ label{
     margin: 0;
     margin-top: 50px;
 }
+
 
 
