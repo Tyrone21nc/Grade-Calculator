@@ -46,7 +46,7 @@ function categoryName(cName){
 function addCategory(){
     let newCatInfo = document.querySelector(".new-category-info");
     newCatInfo.innerHTML = `
-    <label>Enter a category name <input type="textbox" placeholder="new category" class="name background-color-textbox"></label>
+    <label>Enter a category name <input type="textbox" placeholder="new category" class="name background-color-textbox" required></label>
     <button class="cat-btn" id="newCatSubmit">Submit</button>
     <button class="cat-btn" id="newCatCancel">Cancel</button>
     `;
@@ -147,5 +147,6 @@ function getGrade(){
     letterGrade.style.color = letGrade[1];
     
 }
+
 
 
