@@ -76,14 +76,13 @@ label{
     margin-top: 50px;
 }
 #clear-score{
-    display: flex;
-    align-items: center;
     justify-content: center;
     background: black;
     color: rgb(200, 200, 255);
     padding: 5px 0;
     cursor: pointer;
 }
+
 
 
 
