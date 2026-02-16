@@ -76,6 +76,7 @@ label{
     margin-top: 50px;
 }
 #clear-score{
+    display: none;
     justify-content: center;
     background: black;
     color: rgb(200, 200, 255);
@@ -85,6 +86,7 @@ label{
     text-align: center;
     border-radius: 10px;
 }
+
 
 
 
