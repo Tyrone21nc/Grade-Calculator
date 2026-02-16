@@ -80,11 +80,13 @@ label{
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: black;
     background: rgb(200, 200, 255);
     padding: 5px 0;
     cursor: pointer;
 }
+
 
 
 
