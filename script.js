@@ -47,12 +47,17 @@ function addCategory(){
     let newCatInfo = document.querySelector(".new-category-info");
     newCatInfo.innerHTML = `
     <label>Enter a category name <input type="textbox" placeholder="new category" class="name background-color-textbox"></label>
-    <button class="newCatSubmit">Submit</button>
-    <button class="btn">Cancel</button>
+    <button class="cat-btn" id="newCatSubmit">Submit</button>
+    <button class="cat-btn" id="newCatCancel">Cancel</button>
     `;
     let catName = document.querySelector(".name");
-    let newCatSubmit = document.querySelector(".newCatSubmit");
+    let newCatSubmit = document.querySelector("#newCatSubmit");
+    let newCatCancel = document.querySelector("#newCatCancel");
 
+    newCatCancel.onclick = function(){
+        newCatInfo.innerHTML = "";    // make the inner html blank so everything disappears
+    }
+    
     newCatSubmit.onclick = function(){
         // when I click the submit button on the new category
         // I need to register the values -> save them in our categories array
@@ -142,4 +147,5 @@ function getGrade(){
     letterGrade.style.color = letGrade[1];
     
 }
+
 
