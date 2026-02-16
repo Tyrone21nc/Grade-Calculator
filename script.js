@@ -147,7 +147,13 @@ function getGrade(){
     letterGrade.textContent = letGrade[0];
     letterGrade.style.color = letGrade[1];
     clearScore.style.display = "block";
+
+    clearScore.addEventListener("click", {
+        results.textContent = "";
+        letterGrade.textContent = "";
+    });
 }
+
 
 
 
