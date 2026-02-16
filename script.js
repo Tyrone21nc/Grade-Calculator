@@ -83,10 +83,10 @@ function registerValues(){
     console.log("\n\n\n\n\n");
     for(let i=0; i<categories.length; i++){
         if(one[i].value === undefined){
-            one[i].value = ""
+            one[i].value = "";
         }
         if(two[i].value === undefined){
-            two[i].value = ""
+            two[i].value = "";
         }
         categories[i].catPercent = one[i].value;
         categories[i].avgScore = two[i].value;
@@ -141,12 +141,14 @@ function getGrade(){
     console.log(`Course Grade: ${totalGrade}%`);
     let result = document.querySelector("#result").textContent = 
     `Course Grade: ${totalGrade}%`;
+    const clearScore = document.querySelector("#clear-score");
     const letGrade = getLetterGrade(totalGrade);
     let letterGrade = document.getElementById("letterGrade");
     letterGrade.textContent = letGrade[0];
     letterGrade.style.color = letGrade[1];
-    
+    clearScore.style.display = "block";
 }
+
 
 
 
